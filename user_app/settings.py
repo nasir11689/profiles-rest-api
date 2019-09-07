@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'user_api',
+    'rest_framework.authtoken',
+
 ]
 
 MIDDLEWARE = [
@@ -49,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'User_App.urls'
+ROOT_URLCONF = 'user_app.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'User_App.wsgi.application'
+WSGI_APPLICATION = 'user_app.wsgi.application'
 
 
 # Database
@@ -119,3 +123,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+AUTH_USER_MODEL = 'user_api.UserLogin'
+APPEND_SLASH=False
+
