@@ -112,3 +112,4 @@ widgetsnbextension==3.4.2
 wrapt==1.11.1
 xlrd==1.2.0
 yapf==0.26.0
+uWSGI==2.0.15
